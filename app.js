@@ -7,15 +7,7 @@ const io = require('socket.io')(server, {
 
 
 
-//Khởi tao kết nối với MySQL Server
 
-        //Tiến hàng kết nối
-       
-        con.connect(function(err) {
-          if (err) throw err;
-          //Kết nôi thành công
-          console.log("Connected!");
-          //Tiến hành khởi tạo databse
  
 
             io.on('connection',(socket)=>{
@@ -27,7 +19,7 @@ const io = require('socket.io')(server, {
           });
 
           });
-        });
+        
 
 const PORT = process.env.PORT||80;
 server.listen(PORT,()=>{
