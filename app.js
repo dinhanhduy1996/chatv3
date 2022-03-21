@@ -8,12 +8,7 @@ const io = require('socket.io')(server, {
 
 
 //Khởi tao kết nối với MySQL Server
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "chat" 
-});
+
         //Tiến hàng kết nối
        
         con.connect(function(err) {
