@@ -7,9 +7,7 @@ const io = require('socket.io')(server, {
 
 
 
-            app.get('/', function(req, res){
-  
-});
+            app.get('/', function(){});
  
 
             io.on('connection',(socket)=>{
