@@ -7,7 +7,9 @@ const io = require('socket.io')(server, {
 
 
 
-            app.get('/', function(){});
+       app.get('/', (req, res) => {
+  res.send('hello world')
+})
  
 
             io.on('connection',(socket)=>{
