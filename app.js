@@ -7,7 +7,9 @@ const io = require('socket.io')(server, {
 
 
 
-
+            app.get('/', function(req, res){
+  res.sendFile(__dirname + '/views/index.html');
+});
  
 
             io.on('connection',(socket)=>{
